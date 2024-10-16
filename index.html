@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Table</title>
+</head>
+
+    <!-- Css -->
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: -1px 0px 14px 2px rgba(0,0,0,0.20);
+            -webkit-box-shadow: -1px 0px 14px 2px rgba(0,0,0,0.20);
+            -moz-box-shadow: -1px 0px 14px 2px rgba(0,0,0,0.20);
+        }
+
+        tr th {
+            background-color: rgb(223, 222, 222);
+            padding: 6px;
+        }
+
+        th {
+            color: rgba(0, 0, 0, 0.847);
+        }
+
+        td, th {
+            border: 1px solid black;
+            font-family: sans-serif;
+            padding: 10px;
+        }
+
+        .blue {
+            background-color: rgb(207, 247, 247);
+        }
+    </style>
+<body>
+
+    <!-- table 1 -->
+
+    <table>
+
+        <!-- thead -->
+
+        <thead>
+            <tr>
+                <th rowspan="3">ID</th>
+                <th colspan="4">Personal Information</th>
+                <th colspan="5">Contact Information</th>
+                <th rowspan="3">Status</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+                <th>Occupation</th>
+                <th colspan="3">Primary Contact</th>
+                <th rowspan="2">Address</th>
+                <th rowspan="2">Emergency <br>Contact</th>
+            </tr>
+            <tr>
+                <th colspan="2">Email</th>
+                <th>Phone</th>
+                <th>Mobile</th>
+                <th>Fax</th>
+            </tr>
+        </thead>
+
+        <!-- tbody -->
+
+        <tbody>
+            
+            <!-- 1 -->
+
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>28</td>
+                <td>USA</td>
+                <td>Engineer</td>
+                <td colspan="2">john.doe@example.com</td>
+                <td>(555)123-4567</td>
+                <td>123 Elm St, Springfield</td>
+                <td>(555) 765-4321</td>
+                <td>Active</td>
+            </tr>
+
+            <!-- 2 -->
+
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>34</td>
+                <td>Canada</td>
+                <td>Designer</td>
+                <td colspan="2">jane.smith@example.com</td>
+                <td>(555) 987-6543</td>
+                <td>456 Maple Ave, Toronto</td>
+                <td>(555) 654-3210</td>
+                <td>Inactive</td>
+            </tr>
+
+            <!-- 3 -->
+
+            <tr class="blue">
+                <td>3</td>
+                <td colspan="3">Alice Johnson</td>
+                <td>Manager</td>
+                <td colspan="2">alice.j@example.com</td>
+                <td>(555) 234-5678</td>
+                <td rowspan="3">789 Oak Dr, London</td>
+                <td>(555) 876-5432</td>
+                <td>Active</td>
+            </tr>
+
+            <!-- additional info -->
+
+            <tr>
+                <td colspan="4">Additional Info</td>
+                <td>Work</td>
+                <td>Home</td>
+                <td>(555) 678-9012</td>
+                <td>(555) 123-4567</td>
+            </tr>
+
+            <!-- 4 -->
+
+            <tr>
+                <td>4</td>
+                <td>Bob Brown</td>
+                <td>45</td>
+                <td>UK</td>
+                <td>Analyst</td>
+                <td colspan="2">bob.brown@example.com</td>
+                <td>(555) 345-6789</td>
+                <td>(555) 876-5432</td>
+                <td>Inactive</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- table 2 -->
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Projects</th>
+                <th>Deadline</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Project A</td>
+                <td>Active</td>
+                <td>2024-12-31</td>
+            </tr>
+            <tr>
+                <td>Active</td>
+                <td>Completed</td>
+                <td>2024-06-30</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

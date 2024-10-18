@@ -19,6 +19,18 @@
         tr th {
             background-color: rgb(223, 222, 222);
             padding: 6px;
+            transition: .5s;
+            cursor: pointer;
+        }
+
+        tr th::selection {
+            background: red;
+            color: black;
+        }
+
+        tr th:hover {
+            color: rgb(223, 222, 222);
+            background-color: rgba(0, 0, 0, 0.767);
         }
 
         th {
@@ -31,8 +43,38 @@
             padding: 10px;
         }
 
+        td {
+            cursor: pointer;
+            transition: .5s;
+        }
+
+        td::selection {
+            background-color: green;
+            color: rgb(255, 255, 255);
+        }
+
+        td:hover {
+            background-color: rgb(0, 41, 91);
+            color: white;
+        }
+
         .blue {
             background-color: rgb(207, 247, 247);
+        }
+
+        .blue td {
+            transition: .5s;
+            cursor: pointer;
+        }
+
+        .blue td::selection {
+            background-color: yellow;
+            color: black;
+        }
+
+        .blue td:hover {
+            background: black;
+            color: rgb(207, 247, 247);
         }
     </style>
 </head>
